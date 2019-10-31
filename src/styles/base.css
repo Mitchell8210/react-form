@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(60,59,59);
+}
+h1{
+  color:white;
+  text-align: center;
+}
+.container{
+  /* display: flex;
+  justify-content: center;
+  width:800px;
+  flex-direction: column; */
+  
+}
+.form{
+
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(60,59,59);
+  width:800px;
+  margin:auto;
+
+}
+input{
+  height:50px;
+  background: rgb(60,59,59);
+  border: 1px solid white;
+  font-size: 20px;
+  color:white;
+  margin-bottom: 60px;
+}
+button{
+  
+  height:50px;
+  background: rgb(60,59,59);
+  border: 1px solid white;
+  color:white;
+  font-size:20px;
+  outline-color: red;
+  margin-bottom: 100px;
+  width:100%;
+}
+label{
+  color:white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* //////////// submitted form css*/
+
+p{
+  text-align: center;
+  color:white;
+  font-size: 20px;
+}
+
+
+
+/*/////////////////*/
+.error{
+  border:1px solid red;
+}
+
+.labelerror{
+  color:red;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
