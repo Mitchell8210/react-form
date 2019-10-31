@@ -42,7 +42,15 @@ const [errorWebsite, setErrorWebsite] = useState("")
       if(email=== ""){
         err = true;
             setErrorEmail(" - Cannot be blank")
-      } else {
+      } else if(!email.includes("@")){
+        setErrorEmail(" - Must include '@'")
+        if(!email.includes(".com")){
+          setErrorEmail(" - Must be valid Email")
+        }
+      }
+      
+      
+      else {
           setErrorEmail("")
       }
       
