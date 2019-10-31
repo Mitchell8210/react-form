@@ -68,13 +68,13 @@ const [errorWebsite, setErrorWebsite] = useState("")
                 setErrorConfirmPassword('')
             }else if(password !== confirmPassword){
                 err = true
-                setErrorPassword('- Must Match')
-                setErrorConfirmPassword('- Must Match')
+                setErrorPassword('- Must Match "Confirm Password"')
+                setErrorConfirmPassword('- Must Match "Password"')
             }
-     }else if(password !== '' && confirmPassword == ''){
+     }else if(password !== '' && confirmPassword === ''){
             err = true
             setErrorConfirmPassword('- Cannot be blank')
-    }else if(password == '' && confirmPassword !== ''){
+    }else if(password === '' && confirmPassword !== ''){
         err = true
         setErrorPassword('- Cannot be blank')
     }else {
